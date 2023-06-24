@@ -1,0 +1,31 @@
+{
+  "name": "com.sg.firstvit",
+  "private": true,
+  "version": "0.0.0",
+  "proxy": "http://localhost:3000",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "react": "^18.2.0",
+    "react-copy-text": "^1.0.1",
+    "react-copy-to-clipboard": "^5.1.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
+    "react-redux": "^8.0.5",
+    "redux": "^4.2.1"
+  },
+  "devDependencies": {
+    "@iconify/json": "^2.2.41",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react-swc": "^3.0.0",
+    "unplugin-icons": "^0.16.1",
+    "vite": "^4.2.0",
+    "vite-plugin-react-icons": "^0.2.0"
+  }
+}

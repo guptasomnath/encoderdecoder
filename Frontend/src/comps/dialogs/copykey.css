@@ -1,0 +1,102 @@
+.popUpDialog {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.411);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.dialogBody {
+  background-color: #fff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  width: 28rem;
+}
+
+.dialogHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  margin: 0 20px;
+  border-bottom: 1px solid rgb(232, 225, 225);
+}
+
+.dialogHead label {
+  font-weight: bold;
+  color: dimgray;
+}
+
+.dialogHead img {
+  width: 20px;
+  cursor: pointer;
+}
+
+.dialogContent {
+  width: 100%;
+  margin: 8px auto;
+  margin-top: 8px;
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.dialogContent button {
+  padding: 10px 19px;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 3px gray;
+  color: dimgray;
+  font-weight: 600;
+  transition: all 0.5s;
+  margin-top: 15px;
+}
+
+.dialogContent button:hover {
+  box-shadow: 0 0 5px gray;
+}
+
+/*These css for setting items start---*/
+.keyLengthDiv {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.keyLengthDiv label {
+  font-weight: bold;
+  color: dimgray;
+  margin-right: 25px;
+}
+
+.keyLengthSelector {
+  outline: 0;
+  border: 0;
+  box-shadow: 0 0 1px gray;
+  width: 70px;
+  padding: 8px;
+  overflow: hidden;
+}
+
+.LengthOptions {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.keyLengthSelector::-webkit-scrollbar {
+  display: none;
+}
+
+/*These css for setting items end---*/
+
+@media only screen and (max-width: 600px) {
+  .dialogBody {
+    width: 100%;
+  }
+}

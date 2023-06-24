@@ -1,0 +1,72 @@
+.HomePage{
+    text-align: center;
+}
+
+.HomePage h1{
+    padding-top: 28px;
+    font-size: 35px;
+}
+
+.HomePage .buttonDesign {
+    padding: 7px 14px;
+    border-radius: 0.3rem;
+    color: #fff;
+    margin: 15px;
+    border: none;
+    box-shadow: 0 0 3px gainsboro;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.5s;
+    outline: none;
+}
+
+.HomePage .buttonDesign:hover{
+    background-color: gray;
+    color: #000;
+
+}
+
+.encodeDecodeDiv input{
+    padding: 10px;
+    width: 350px;
+    margin: 0 15px;
+    outline: none;
+    border: none;
+}
+
+.textFildDivDesign{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.keyGeneratorDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.settingIcon{
+    width: 28px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+@keyframes rotate {
+
+    from{
+        rotate: 0deg;
+    }
+
+    to{
+        rotate: 60deg;
+    }
+    
+}
+
+@media only screen and(max-width: 600px) {
+}
+
+

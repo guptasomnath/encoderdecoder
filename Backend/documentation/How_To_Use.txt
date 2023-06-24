@@ -1,0 +1,60 @@
+-- Generate Key --
+   Endpoint: /chl/lengthOfEveryKey,
+   METHOD: GET,
+   Example: /chl/5
+
+   Response If Failed: 
+   {
+      isSuccess : false,
+      message : "Failed Message"
+   }
+
+   Response If Success: 
+   {
+      isSuccess : true,
+      hashCodeKey : response
+   }
+
+   Explain:- Whenever you want to encode or decode text you need to provide
+             this key.
+
+-- Encode Text --
+
+   Endpoint: /encode,
+   METHOD: POST,
+   Body Params: text, key(the generated key)
+
+   Response If Failed: 
+   {
+      isSuccess : false,
+      message : "Failed Message"
+   }
+
+   Response If Success: 
+   {
+      isSuccess : true,
+      encodeText : response
+   }
+
+   Explain:- You can send the generated key as a string;
+
+
+-- Encode Text --
+
+   Endpoint: /decode,
+   METHOD: POST,
+   Body Params: hashcode, key(the generated key)
+
+   Response If Failed: 
+   {
+      isSuccess : false,
+      message : "Failed Message"
+   }
+
+   Response If Success: 
+   {
+      isSuccess : true,
+      decodeText : response
+   }
+
+   Explain:- You can send the generated key as a string;
