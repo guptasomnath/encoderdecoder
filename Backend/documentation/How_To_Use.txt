@@ -1,5 +1,5 @@
 -- Generate Key --
-   Endpoint: /chl/lengthOfEveryKey,
+   Endpoint: /chl/lengthOfEveryKey, 
    METHOD: GET,
    Example: /chl/5
 
@@ -15,14 +15,14 @@
       hashCodeKey : response
    }
 
-   Explain:- Whenever you want to encode or decode text you need to provide
+   Note:- Whenever you want to encode or decode text you need to provide
              this key.
 
 -- Encode Text --
 
    Endpoint: /encode,
    METHOD: POST,
-   Body Params: text, key(the generated key)
+   Body Params: text, key(the generated key String)
 
    Response If Failed: 
    {
@@ -39,11 +39,11 @@
    Explain:- You can send the generated key as a string;
 
 
--- Encode Text --
+-- Decode Text --
 
    Endpoint: /decode,
    METHOD: POST,
-   Body Params: hashcode, key(the generated key)
+   Body Params: hashcode(encoded text), key(the generated key)
 
    Response If Failed: 
    {
