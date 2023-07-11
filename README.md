@@ -44,7 +44,7 @@ Text Encryptor and Decryptor project that allows users to generate and upload cu
   
      Endpoint: /decode, (ex:- API_URL/decode)
      METHOD: POST,
-     Body Params: hashcode, key(the generated key as String)
+     Body Params: hashcode (encoded text), key(the generated key as String)
 
      Response If Failed: 
      {
